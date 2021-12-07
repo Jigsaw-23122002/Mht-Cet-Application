@@ -1,0 +1,82 @@
+#a{
+    display:flex;
+    flex-direction:column;
+}
+#a1{
+    margin:10px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+#a1 div:hover{
+    background-color: rgba(71, 71, 71, 0.5);
+    transition: 350ms;
+}
+#a1 div{
+    width:80px;
+    padding:10px;
+    text-align: center;
+}
+#a2{
+    margin:10px;
+    padding:10px; 
+    width:97%;
+    border:1px solid black;
+}
+#b{
+    display:flex;
+}
+#MainHeading{
+    width:90%;
+    margin:10px;
+    margin-top: 25px;
+    color:black;
+}
+#PMain{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding:20px;
+    color:lightgray;
+}
+#PMain button{
+    background-color:black;
+}
+
+#CMain h2{
+    color:black;
+}
+#CMain{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding:20px;
+    color:lightgray;
+}
+#CMain button{
+    background-color: black;
+}
+#MMain h2{
+    color:black;
+}
+#MMain{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding:20px;
+    color:lightgray;
+    /*
+    background-color:  rgba(71, 71, 71, 0.5);
+    */
+}
+#MMain button{
+    background-color: black;
+}
+button{
+    border: none;
+    padding:20px;
+    border-radius: 5px;
+    color:white;
+}
+
+button a{
+    text-decoration:none;
+    color:white;
+}
+#QAP{
+    margin-top:20px;
+}

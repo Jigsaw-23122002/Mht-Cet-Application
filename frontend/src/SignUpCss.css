@@ -1,0 +1,25 @@
+#SignUp{
+    align-self:center;
+    margin:20px;
+    padding:20px;
+    color:lightgray;
+    background-color: rgba(53, 51, 51, 0.5);
+    width:50%;
+    height:70%;
+    border-radius:5px;
+}
+#dun{
+    color:white;
+    background-color:black;
+    border:none;
+    width:80px;
+    height:40px;
+    border-radius:5px;
+}
+input{
+    border:1px solid black;
+    border-radius:3px;
+    height:35px;
+    width:40%;
+    font-size: 110%;
+}
