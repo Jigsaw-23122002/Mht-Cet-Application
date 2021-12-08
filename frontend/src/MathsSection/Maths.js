@@ -1,7 +1,10 @@
 import { useState } from "react";
 import MathsPractice11 from "./MathsPractice11";
 import MathsPractice12 from "./MathsPractice12";
+import {Link} from 'react-router-dom';
+import io from 'socket.io-client';
 import "../CssSection/MyCss.css";
+const socket=io.connect('http://localhost:4500');
 
 function Maths(props){
     let [watch11,setWatch11]=useState(false);
@@ -18,7 +21,10 @@ function Maths(props){
     function clswth12(){
         setWatch12(false);
     }
-
+    function wthqs(){
+        console.log('Request for Maths questions emited from the frontend.')
+        socket.emit('getMathsQuestions');
+    }
     return (
         <div id="MMain">
             <h2>Maths</h2>
@@ -61,6 +67,9 @@ function Maths(props){
                         {watch12 && <MathsPractice12 value={clswth12}/>}
                     </div>
                 </div>
+            </div>
+            <div style={{marginLeft:"45%"}}>
+                <button id="QAP" onClick={wthqs}><Link to='/MathsQA'>Question-Answer Section</Link></button>
             </div>
         </div>
     );

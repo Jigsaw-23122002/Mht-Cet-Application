@@ -1,5 +1,3 @@
-//https://cloud.mongodb.com/v2/6178452c71cd415675f9fe02#metrics/replicaSet/617845fa484e861dd8200795/explorer/Database1/datas/find
-
 const express=require('express');
 const http=require('http');
 const app=express();
@@ -95,6 +93,13 @@ io.on('connection',(socket)=>{
             Question:object.Question
         })
         OBJECT.save();
+    })
+    socket.on('getMathsQuestions',()=>{
+        MathQuest.find()
+        .then((data)=>{
+            console.log(data);
+            socket.emit('takeMathsQuestions',data);
+        })
     })
 })
 

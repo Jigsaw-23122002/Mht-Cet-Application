@@ -25,6 +25,7 @@ function MQASection(props){
             Chapter:chapter,
             Question:question
         };
+        console.log(object);
         socket.emit('UploadMaths',object)
     }
 
