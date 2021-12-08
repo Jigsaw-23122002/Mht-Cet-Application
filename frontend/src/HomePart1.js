@@ -5,7 +5,7 @@ import Chemistry from "./ChemistrySection/Chemistry";
 import Maths from "./MathsSection/Maths";
 import {useState,useContext} from 'react';
 import HomePart2 from './HomePart2';
-import UserContext from './PhysicsSection/UserContext';
+import UserContext from './UserContext';
 import PQASection from './PhysicsSection/PQASection';
 import CQASection from './ChemistrySection/CQASection';
 
@@ -13,7 +13,6 @@ function HomePart1(){
 
     const [physicsData,setPhysicsData]=useState([]);
     const [chemistryData,setChemistryData]=useState([]);
-
     return (
         <div>
             <div id="a">

@@ -3,7 +3,7 @@ import '../CssSection/PQACSS.css';
 import io from 'socket.io-client';
 import {Link} from 'react-router-dom';
 import { useEffect } from "react";
-import UserContext from "./UserContext";
+import UserContext from "../UserContext";
 import AnswerComponent from "./AnswerComponent";
 
 const socket=io.connect("http://localhost:4500");
@@ -28,9 +28,9 @@ function PQASection(props){
         socket.emit('Upload',object)
     }
 
-    function GETANSWERS(){
-        
-    }
+    useEffect(()=>{
+        socket.emit('getPhysicsQuestions')
+    },[])
 
     return (
         <div>

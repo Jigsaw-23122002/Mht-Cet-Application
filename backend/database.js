@@ -83,6 +83,7 @@ io.on('connection',(socket)=>{
     socket.on('getChemistryQuestions',()=>{
         ChemQuest.find()
         .then((data)=>{
+            console.log(data);
             socket.emit('takeChemistryQuestions',data);
         })
     })

@@ -4,8 +4,7 @@ import {useState,useContext, useEffect} from "react";
 import "../CssSection/MyCss.css";
 import {Link} from 'react-router-dom'
 import PQASection from "./PQASection";
-import UserContext from "./UserContext";
-import { Socket } from "dgram";
+import UserContext from "../UserContext";
 import io from 'socket.io-client'
 const socket=io.connect('http://localhost:4500')
 

@@ -3,13 +3,13 @@ import '../CssSection/PQACSS.css';
 import io from 'socket.io-client';
 import {Link} from 'react-router-dom';
 import { useEffect } from "react";
-import UserContext from "./UserContext";
+import UserContext from "../UserContext";
 import AnswerComponent from "./AnswerComponent";
 
 const socket=io.connect("http://localhost:4500");
 
 function CQASection(props){
-
+    
     const {chemistryData,setChemistryData}=useContext(UserContext);
     let [sidebar,setSidebar]=useState(false);
     let [chapter,setChapter]=useState("");
@@ -27,6 +27,13 @@ function CQASection(props){
         };
         socket.emit('UploadChemistry',object)
     }
+
+    useEffect(()=>{
+        socket.on('takeChemistryQuestions',(data)=>{
+            setChemistryData(data);
+            console.log('Got data');
+        })
+    },[socket]);
 
     return (
         <div>
