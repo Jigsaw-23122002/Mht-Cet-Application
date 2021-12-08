@@ -8,9 +8,9 @@ import AnswerComponent from "./AnswerComponent";
 
 const socket=io.connect("http://localhost:4500");
 
-function PQASection(props){
+function MQASection(props){
 
-    const {physicsData,setPhysicsData}=useContext(UserContext);
+    const {mathsData,setMathsData}=useContext(UserContext);
     let [sidebar,setSidebar]=useState(false);
     let [chapter,setChapter]=useState("");
     let [question,setQuestion]=useState("");
@@ -25,21 +25,21 @@ function PQASection(props){
             Chapter:chapter,
             Question:question
         };
-        socket.emit('Upload',object)
+        socket.emit('UploadMaths',object)
     }
 
     useEffect(()=>{
-        socket.emit('getPhysicsQuestions')
+        socket.emit('getMathsQuestions')
     },[])
     useEffect(()=>{
-        socket.on('takePhysicsQuestions',(data)=>{
-            setPhysicsData(data);
+        socket.on('takeMathsQuestions',(data)=>{
+            setMathsData(data);
         })
     })
 
     return (
         <div>
-            <h3>Physics Question and answer section</h3>
+            <h3>Maths Question and answer section</h3>
             <section id="sync1">
                 <div id="sync2">
                     <div id="sync4">
@@ -49,7 +49,7 @@ function PQASection(props){
                     <hr/>
                     <section>
                         <div>
-                        {physicsData.map((element)=>{
+                        {mathsData.map((element)=>{
                             return (
                                 <div className="QuestionDiv">
                                     <AnswerComponent elem={element}/>
@@ -94,10 +94,10 @@ function PQASection(props){
                 }
             </section>
             <section>
-                <button className="BackToMain" onClick={props.close}> <Link to="/Physics">Back to Main</Link></button>
+                <button className="BackToMain" onClick={props.close}> <Link to="/Maths">Back to Main</Link></button>
             </section>
         </div>
     );
 }
 
-export default PQASection;
+export default MQASection;

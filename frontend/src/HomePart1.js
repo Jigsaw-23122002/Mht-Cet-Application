@@ -8,11 +8,13 @@ import HomePart2 from './HomePart2';
 import UserContext from './UserContext';
 import PQASection from './PhysicsSection/PQASection';
 import CQASection from './ChemistrySection/CQASection';
+import MQASection from './MathsSection/MQASection';
 
 function HomePart1(){
 
     const [physicsData,setPhysicsData]=useState([]);
     const [chemistryData,setChemistryData]=useState([]);
+    const [mathsData,setMathsData]=useState([]);
     return (
         <div>
             <div id="a">
@@ -32,7 +34,7 @@ function HomePart1(){
                         </div>
                     </div>
                     <div id="a2">
-                        <UserContext.Provider value={{physicsData,setPhysicsData,chemistryData,setChemistryData}}>
+                        <UserContext.Provider value={{physicsData,setPhysicsData,chemistryData,setChemistryData,mathsData,setMathsData}}>
                             <Switch>
                                 <Route exact path="/Physics">
                                     <Physics/>
@@ -51,6 +53,9 @@ function HomePart1(){
                                 </Route>
                                 <Route exact path="/ChemistryQA">
                                     <CQASection/>
+                                </Route>
+                                <Route exact path="/MathsQA">
+                                    <MQASection/>
                                 </Route>
                             </Switch>
                         </UserContext.Provider>      

@@ -35,6 +35,12 @@ function CQASection(props){
         })
     },[socket]);
 
+    useEffect(()=>{
+        socket.emit('getChemistryQuestions',(data)=>{
+            setChemistryData(data);
+        })
+    },[])
+
     return (
         <div>
             <h3>Chemistry Question and answer section</h3>

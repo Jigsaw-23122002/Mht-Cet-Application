@@ -9,11 +9,13 @@ const Question=require('./Model.js');
 const mongoose= require('mongoose');
 const Ans = require('./Modal.js');
 const ChemQuest = require('./ChemModal.js');
+const MathQuest=require('./MathsModal');
 app.use(cors());
+require('dotenv').config();
 
 const server=http.createServer(app);
 
-const mongoUrl="mongodb+srv://JIGSAW:JIGSAW123@cluster0.rrmrh.mongodb.net/Database1?retryWrites=true&w=majority";
+const mongoUrl=process.env.MongoDB_URL;
 mongoose.connect(mongoUrl);
 
 const io=new Server(server,{
@@ -86,6 +88,13 @@ io.on('connection',(socket)=>{
             console.log(data);
             socket.emit('takeChemistryQuestions',data);
         })
+    })
+    socket.on('UploadMaths',(object)=>{
+        let OBJECT=new MathQuest({
+            Chapter:object.Chapter,
+            Question:object.Question
+        })
+        OBJECT.save();
     })
 })
 
