@@ -73,6 +73,34 @@ io.on('connection',(socket)=>{
             })
         }
     })
+    socket.on('addTheAnswerChem',(object)=>{
+        if(object.Answer!==""  && object.Answerer!==""){
+            console.log('Got answer in the backend')
+            console.log(object);
+            ChemQuest.findOneAndUpdate({_id:object.QuestionID},{
+                $push:{
+                    Answers:object
+                }
+            })
+            .then(()=>{
+                socket.emit('AddingAnswerConfirmation',"Answer Appended Successfully.");
+            })
+        }
+    })
+    socket.on('addTheAnswerMath',(object)=>{
+        if(object.Answer!==""  && object.Answerer!==""){
+            console.log('Got answer in the backend')
+            console.log(object);
+            MathQuest.findOneAndUpdate({_id:object.QuestionID},{
+                $push:{
+                    Answers:object
+                }
+            })
+            .then(()=>{
+                socket.emit('AddingAnswerConfirmation',"Answer Appended Successfully.");
+            })
+        }
+    })
     socket.on('UploadChemistry',(object)=>{
         let OBJECT=new ChemQuest({
             Chapter:object.Chapter,

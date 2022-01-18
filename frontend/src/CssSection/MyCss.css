@@ -3,10 +3,12 @@
     flex-direction:column;
 }
 #a1{
+    margin: 0;
     margin:10px;
     display:flex;
     flex-direction:row;
-    justify-content:space-evenly;
+    justify-content:flex-start;
+    border-radius: 3px;
 }
 #a1 div:hover{
     background-color: rgba(71, 71, 71, 0.5);
@@ -33,16 +35,15 @@
     color:black;
 }
 #PMain{
-    background-color: rgba(0, 0, 0, 0.1);
     padding:20px;
-    color:lightgray;
 }
 #PMain button{
-    background-color:black;
+    background-color:gray;
+    font-size: medium;
 }
 
 #CMain h2{
-    color:black;
+    color:white;
 }
 #CMain{
     background-color: rgba(0, 0, 0, 0.1);

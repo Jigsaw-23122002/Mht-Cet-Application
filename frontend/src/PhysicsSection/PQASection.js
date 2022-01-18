@@ -21,11 +21,13 @@ function PQASection(props){
     function upload(event){
 
         event.preventDefault();
-        let object={
-            Chapter:chapter,
-            Question:question
-        };
-        socket.emit('Upload',object)
+        if(chapter!=="" && question!==""){
+            let object={
+                Chapter:chapter,
+                Question:question
+            };
+            socket.emit('Upload',object)
+        }
     }
 
     useEffect(()=>{
@@ -85,7 +87,7 @@ function PQASection(props){
                             onChange={(e)=>{setQuestion(e.target.value)}}
                             ></textarea>
                             <br/><br/>
-                            <button onClick={upload}> Upload Question </button>
+                            <button onClick={upload} style={{color:"white",backgroundColor:"black",padding:"8px",borderRadius:"3px"}}> Upload Question </button>
                         </form>
                     </div>
                 </div>):(

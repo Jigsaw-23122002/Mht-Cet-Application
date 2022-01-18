@@ -16,7 +16,7 @@ function AnswerForm(props){
             Answerer:answerer,
             Answer:answer
         }
-        socket.emit('addTheAnswer',object);
+        socket.emit('addTheAnswerMath',object);
     }
 
     useEffect(()=>{
@@ -54,7 +54,7 @@ function AnswerForm(props){
                 }}
                 ></textarea>
                 <br/><br/>
-                <button onClick={addedAnswer}>Submit Answer</button>
+                <button onClick={addedAnswer} style={{backgroundColor:"black",color:"white",padding:"8px"}}>Submit Answer</button>
             </form>
         </div>
     );

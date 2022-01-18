@@ -21,12 +21,14 @@ function MQASection(props){
     function upload(event){
 
         event.preventDefault();
-        let object={
-            Chapter:chapter,
-            Question:question
-        };
-        console.log(object);
-        socket.emit('UploadMaths',object)
+        if(question!=="" && chapter!==""){
+            let object={
+                Chapter:chapter,
+                Question:question
+            };
+            console.log(object);
+            socket.emit('UploadMaths',object)    
+        }
     }
 
     useEffect(()=>{
@@ -86,7 +88,7 @@ function MQASection(props){
                             onChange={(e)=>{setQuestion(e.target.value)}}
                             ></textarea>
                             <br/><br/>
-                            <button onClick={upload}> Upload Question </button>
+                            <button onClick={upload} style={{backgroundColor:"black",color:"white",padding:"8px"}}> Upload Question </button>
                         </form>
                     </div>
                 </div>):(

@@ -22,7 +22,7 @@ function AnswerComponent(props){
     return (
         <div>
             <div>
-                <h3 className="header">
+                <h3 className="header" style={{fontFamily:"sans-serif"}}>
                     <div className="Insideheader">{props.elem.Chapter}</div>
                     <button className="BOTbutton1" onClick={SEEANSWER}>Previous Answers</button>
                     <button className="BOTbutton2" onClick={ADDANSWER}>Add Answer</button>

@@ -19,13 +19,14 @@ function CQASection(props){
         setSidebar(true);
     }
     function upload(event){
-
-        event.preventDefault();
-        let object={
-            Chapter:chapter,
-            Question:question
-        };
-        socket.emit('UploadChemistry',object)
+        if(chapter!=="" && question!==""){
+            event.preventDefault();
+            let object={
+                Chapter:chapter,
+                Question:question
+            };
+            socket.emit('UploadChemistry',object)
+        }
     }
 
     useEffect(()=>{
@@ -89,7 +90,7 @@ function CQASection(props){
                             onChange={(e)=>{setQuestion(e.target.value)}}
                             ></textarea>
                             <br/><br/>
-                            <button onClick={upload}> Upload Question </button>
+                            <button onClick={upload} style={{backgroundColor:"black",color:"white",padding:"8px",borderRadius:"3px"}}> Upload Question </button>
                         </form>
                     </div>
                 </div>):(

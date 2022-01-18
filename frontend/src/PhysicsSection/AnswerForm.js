@@ -54,7 +54,7 @@ function AnswerForm(props){
                 }}
                 ></textarea>
                 <br/><br/>
-                <button onClick={addedAnswer}>Submit Answer</button>
+                <button onClick={addedAnswer} style={{backgroundColor:"black",color:"white",padding:"10px"}}>Submit Answer</button>
             </form>
         </div>
     );
