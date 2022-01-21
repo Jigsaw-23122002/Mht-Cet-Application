@@ -1,21 +1,22 @@
 import './CssSection/LinksCss.css';
 
-function MainHome(){
+function MainHome() {
     return (
         <div >
             <h2>MHT-CET(Engg) Entrance Exam</h2>
             <div>
                 <p>
-                MHT CET (or Maharashtra Common Entrance Test) is a common state level entrance exam conducted by the State Common Entrance Test Cell, Government of Maharashtra every year for admission to undergraduate engineering, pharmacy and agriculture courses such as B.Tech/ B.E, Pharma D and B.Pharma offered at colleges in Maharashtra.
+                    MHT CET (or Maharashtra Common Entrance Test) is a common state level entrance exam conducted by the State Common Entrance Test Cell, Government of Maharashtra every year for admission to undergraduate engineering, pharmacy and agriculture courses such as B.Tech/ B.E, Pharma D and B.Pharma offered at colleges in Maharashtra.
                 </p>
                 <p>
-                The examination will be conducted at various centres across the Maharashtra as well as outside Maharashtra State by Online mode (Computer Based Test) tentatively in 2nd week of May 2021 for PCM and PCB group separately.
+                    The examination will be conducted at various centres across the Maharashtra as well as outside Maharashtra State by Online mode (Computer Based Test) tentatively in 2nd week of May 2021 for PCM and PCB group separately.
                 </p>
                 <p>
-                The exam will comprise three papers. Paper 1: Mathematics, Paper 2: Physics and Chemistry.Questions will be of MCQ type and the duration will be 90 minutes for each paper.
+                    The exam will comprise three papers. Paper 1: Mathematics, Paper 2: Physics and Chemistry.Questions will be of MCQ type and the duration will be 90 minutes for each paper.
                 </p>
             </div>
-            <br/>
+            <hr />
+            <br />
             <h2>MHT-CET Exam Pattern</h2>
             <div>
                 <ul>
@@ -62,7 +63,8 @@ function MainHome(){
                         </tr>
                     </table>
                 </div>
-                <br/>
+                <hr />
+                <br />
                 <div>
                     <h2>MHT-CET Syllabus</h2>
                     <div>
@@ -81,6 +83,7 @@ function MainHome(){
                             </ul>
                         </div>
                     </div>
+                    <hr />
                     <div>
                         <h3>Syllabus of class 12</h3>
                         <div>
@@ -99,10 +102,10 @@ function MainHome(){
                     </div>
                 </div>
             </div>
-            <br/>
+            <br />
             <div id="original">
                 <p><b>Official MHT-CET site:
-                <a href="https://cetcell.mahacet.org/">cetcell.mahacet.org</a>
+                    <a href="https://cetcell.mahacet.org/">cetcell.mahacet.org</a>
                 </b></p>
             </div>
         </div>

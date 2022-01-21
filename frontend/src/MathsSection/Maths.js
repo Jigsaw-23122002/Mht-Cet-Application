@@ -1,34 +1,38 @@
 import { useState } from "react";
 import MathsPractice11 from "./MathsPractice11";
 import MathsPractice12 from "./MathsPractice12";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import io from 'socket.io-client';
 import "../CssSection/MyCss.css";
-const socket=io.connect('http://localhost:4500');
+import mtb11 from '../CssSection/mtb11.png';
+import mtb12 from '../CssSection/mtb12.png';
+import mtb21 from '../CssSection/mtb21.png';
+import mtb22 from '../CssSection/mtb22.png';
+const socket = io.connect('http://localhost:4500');
 
-function Maths(props){
-    let [watch11,setWatch11]=useState(false);
-    let [watch12,setWatch12]=useState(false);
-    function wth11(){
+function Maths(props) {
+    let [watch11, setWatch11] = useState(false);
+    let [watch12, setWatch12] = useState(false);
+    function wth11() {
         setWatch11(true);
     }
-    function wth12(){
+    function wth12() {
         setWatch12(true);
     }
-    function clswth11(){
+    function clswth11() {
         setWatch11(false);
     }
-    function clswth12(){
+    function clswth12() {
         setWatch12(false);
     }
-    function wthqs(){
+    function wthqs() {
         console.log('Request for Maths questions emited from the frontend.')
         socket.emit('getMathsQuestions');
     }
     return (
         <div id="MMain">
             <h2>Maths</h2>
-            <hr/>
+            <hr />
             <div>
                 <h3>Tips for Maths</h3>
                 <div>
@@ -40,35 +44,99 @@ function Maths(props){
                         <li>Since there is no negative marking in MHT-CET, make an educated guess for even those questions which you couldn’t solve.</li>
                     </ul>
                 </div>
+                <hr/>
                 <div>
                     <h4>Important topics of standard 11-</h4>
-                    <p>Trignometric Identities, Straight Lines, Circle and conics, Sets, Relations and Functions, Sequences and Series, Probability</p>
-                    <h4>Important topics of standard 12-</h4>
-                    <p>Three-Dimensional Geometrical system, Probability, Point and straight line, Vector, Mathematical reasoning, Indefinite Integration, Differential Equation, Application of Derivatives</p>
+                    <div style={{ marginTop: "20px", marginBottom: "20px", display: "flex", flexDirection: "row" }}>
+                        <div>
+                            <img src={"https://media2.giphy.com/media/fX1WbBccfGlffLwCjZ/giphy.gif?cid=ecf05e47llbglxlpdpkjma3oln77wi6km0oj2uezxqo5qoen&rid=giphy.gif&ct=g"} style={{ width: "200%", height: "400px", borderRadius: "7px" }} />
+                        </div>
+                        <div style={{ marginLeft: "40%" }}>
+                            <table cellSpacing="0" cellPadding="10px" style={{ marginTop: "10px" }}>
+                                <tr>
+                                    <td><b>Standard 11</b></td>
+                                    <td><b>Standard 12</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Trignometric Identities</td>
+                                    <td>Three-Dimensional Geometrical system</td>
+                                </tr>
+                                <tr>
+                                    <td>Straight Lines</td>
+                                    <td>Probability</td>
+                                </tr>
+                                <tr>
+                                    <td>Circle and conics</td>
+                                    <td>Point and straight line</td>
+                                </tr>
+                                <tr>
+                                    <td>Sets</td>
+                                    <td>Vector</td>
+                                </tr>
+                                <tr>
+                                    <td>Relations and Functions</td>
+                                    <td>Mathematical reasoning</td>
+                                </tr>
+                                <tr>
+                                    <td>Sequences and Series</td>
+                                    <td>Indefinite Integration</td>
+                                </tr>
+                                <tr>
+                                    <td>Probability</td>
+                                    <td>Differential Equation</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <hr/>
             <div>
                 <div id="MathsLinks">
-                    <p><b>State board 11<sup>th</sup>Textbook Part 1 : <a href="https://drive.google.com/drive/u/0/folders/10GFS93eUh_CCoWnk2ng3oN5WJckP7kxF">Open</a></b></p>
-                    <p><b>State board 11<sup>th</sup>Textbook Part 2 : <a href="https://drive.google.com/drive/u/0/folders/1fNdnOkY33-wvwoWqO9oH4Bc747WkfIqm">Open</a></b></p>
-                    <p><b>State board 12<sup>th</sup>Textbook Part 1: <a href="https://drive.google.com/drive/u/0/folders/1kCGptgRcqfoXdz9KuJ7oxlfu9mSO3Reh">Open</a></b></p>
-                    <p><b>State board 12<sup>th</sup>Textbook Part 2: <a href="https://drive.google.com/drive/u/0/folders/11TR3cWGGH4RhVbLWk-v6hWXu6gAE1phZ">Open</a></b></p>
+                    <li style={{ marginTop: "10px" }}><b>Government State Textbooks PDF Links</b></li>
+                    <section style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
+                        <section style={{ padding: "25px", backgroundColor: "white", borderRadius: "6px", paddingTop: "0px", margin: "20px" }}>
+                            <p><b>State board 11<sup>th</sup>Textbook</b></p>
+                            <img src={mtb11} width={"200px"} />
+                            <br></br><br />
+                            <b><a href="https://drive.google.com/drive/u/0/folders/10GFS93eUh_CCoWnk2ng3oN5WJckP7kxF">Open</a></b>
+                        </section>
+                        <section style={{ padding: "25px", backgroundColor: "white", borderRadius: "6px", paddingTop: "0px", margin: "20px" }}>
+                            <p><b>State board 12<sup>th</sup>Textbook</b></p>
+                            <img src={mtb12} width={"200px"} />
+                            <br></br><br />
+                            <b><a href="https://drive.google.com/drive/u/0/folders/1fNdnOkY33-wvwoWqO9oH4Bc747WkfIqm">Open</a></b>
+                        </section>
+                        <section style={{ padding: "25px", backgroundColor: "white", borderRadius: "6px", paddingTop: "0px", margin: "20px" }}>
+                            <p><b>State board 12<sup>th</sup>Textbook</b></p>
+                            <img src={mtb21} width={"200px"} />
+                            <br></br><br />
+                            <b><a href="https://drive.google.com/drive/u/0/folders/1kCGptgRcqfoXdz9KuJ7oxlfu9mSO3Reh">Open</a></b>
+                        </section>
+                        <section style={{ padding: "25px", backgroundColor: "white", borderRadius: "6px", paddingTop: "0px", margin: "20px" }}>
+                            <p><b>State board 12<sup>th</sup>Textbook</b></p>
+                            <img src={mtb22} width={"200px"} />
+                            <br></br><br />
+                            <b><a href="https://drive.google.com/drive/u/0/folders/11TR3cWGGH4RhVbLWk-v6hWXu6gAE1phZ">Open</a></b>
+                        </section>
+                    </section>
                 </div>
-                <h3>Chapterwise Practice</h3>
+                <hr/>
+                <h3><li>Chapterwise Practice</li></h3>
                 <div>
-                    <h4>11<sup>th</sup> Chapterwise Practice questions.</h4>
-                    {!watch11 && <button onClick={wth11} style={{height:"40px",padding:"10px"}}>Chapter List</button>}
+                    <h4>Chapterwise Practice questions of standard 11
+                    {!watch11 && <button onClick={wth11} style={{ color: "black", height: "55px", width: "55px", borderRadius: "50%", margin: "10px", color: "white", backgroundColor: "black" }}>&#x21e9;</button>}</h4>
                     <div>
-                        {watch11 && <MathsPractice11 value={clswth11}/>}
+                        {watch11 && <MathsPractice11 value={clswth11} />}
                     </div>
-                    <h4>12<sup>th</sup> Chapterwise Practice questions.</h4>
-                    {!watch12 && <button onClick={wth12} style={{height:"40px",padding:"10px"}}>Chapter List</button>}
+                    <h4>Chapterwise Practice questions of standard 12
+                    {!watch12 && <button onClick={wth12} style={{ color: "black", height: "55px", width: "55px", borderRadius: "50%", margin: "10px", color: "white", backgroundColor: "black" }}>&#x21e9;</button>}</h4>
                     <div>
-                        {watch12 && <MathsPractice12 value={clswth12}/>}
+                        {watch12 && <MathsPractice12 value={clswth12} />}
                     </div>
                 </div>
             </div>
-            <div style={{marginLeft:"45%"}}>
+            <div style={{ marginLeft: "45%" }}>
                 <button id="QAP" onClick={wthqs}><Link to='/MathsQA'>Question-Answer Section</Link></button>
             </div>
         </div>

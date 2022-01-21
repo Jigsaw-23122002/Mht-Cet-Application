@@ -1,7 +1,7 @@
 import './App.css';
 import HomePage from './HomePage';
 
-function App(){
+function App() {
   return (
     <div>
       <HomePage />
