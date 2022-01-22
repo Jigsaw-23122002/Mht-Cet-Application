@@ -48,7 +48,9 @@ function Physics() {
 
     return (
         <div id="PMain">
-            <h2>Physics</h2>
+            <h2>Physics
+                <button id="QAP" onClick={wthqs} style={{backgroundColor:"black",marginLeft:"80%",fontSize:"13px"}}><Link to='/PhysicsQA'>Question-Answer Section</Link></button>
+            </h2>
             <hr />
             {!questSection ? (
                 <div>
@@ -121,27 +123,24 @@ function Physics() {
                                 </section>
                             </section>
                         </div>
-                        <hr/>
-                        <h3>Chapterwise Practice Questions</h3>
+                        <hr />
+                        <h3><li>Chapterwise Practice Questions</li></h3>
                         <div>
                             <div>
-                                <h4>Chapterwise Practice questions of Standard 11
+                                <h4 style={{backgroundColor:"white",borderRadius:"5px",padding:"7px"}}>Chapterwise Practice questions of Standard 11
                                     {!watch11 && <button className="dropdown" onClick={wth11} style={{ color: "black", height: "55px", width: "55px", borderRadius: "50%", margin: "10px", color: "white", backgroundColor: "black" }}> &#x21e9;</button>}
                                 </h4>
-                                <div >
+                                <div style={{backgroundColor:"rgba(0, 0, 0, 0.3)",padding:"7px",borderRadius:"5px"}}>
                                     {watch11 && <PhysicsPractice11 value={clswth11} />}
                                 </div>
                             </div>
                             <div>
-                                <h4>Chapterwise Practice questions of Standard 12
+                                <h4 style={{backgroundColor:"white",borderRadius:"5px",padding:"7px"}}>Chapterwise Practice questions of Standard 12
                                     {!watch12 && <button onClick={wth12} style={{ color: "black", height: "55px", width: "55px", borderRadius: "50%", margin: "10px", color: "white", backgroundColor: "black" }} >&#x21e9;</button>}</h4>
-                                <div >
+                                <div style={{backgroundColor:"rgba(0, 0, 0, 0.3)",padding:"7px",borderRadius:"5px"}}>
                                     {watch12 && <PhysicsPractice12 value={clswth12} />}
                                 </div>
                             </div>
-                        </div>
-                        <div >
-                            <button id="QAP" onClick={wthqs}><Link to='/PhysicsQA'>Question-Answer Section</Link></button>
                         </div>
                     </div>
                 </div>) : (

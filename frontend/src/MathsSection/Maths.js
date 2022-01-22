@@ -31,10 +31,12 @@ function Maths(props) {
     }
     return (
         <div id="MMain">
-            <h2>Maths</h2>
+            <h2>Maths
+                <button id="QAP" onClick={wthqs} style={{backgroundColor:"black",marginLeft:"81%",fontSize:"13px"}}><Link to='/MathsQA'>Question-Answer Section</Link></button>
+            </h2>
             <hr />
             <div>
-                <h3>Tips for Maths</h3>
+                <h3><li>Tips for Maths</li></h3>
                 <div>
                     <p>To strengthen Maths section, you should ensure that you have memorised all important formulae and properties and have left no topic as an option.</p>
                     <ul>
@@ -44,9 +46,9 @@ function Maths(props) {
                         <li>Since there is no negative marking in MHT-CET, make an educated guess for even those questions which you couldn’t solve.</li>
                     </ul>
                 </div>
-                <hr/>
+                <hr />
                 <div>
-                    <h4>Important topics of standard 11-</h4>
+                    <h4><li>Important topics</li></h4>
                     <div style={{ marginTop: "20px", marginBottom: "20px", display: "flex", flexDirection: "row" }}>
                         <div>
                             <img src={"https://media2.giphy.com/media/fX1WbBccfGlffLwCjZ/giphy.gif?cid=ecf05e47llbglxlpdpkjma3oln77wi6km0oj2uezxqo5qoen&rid=giphy.gif&ct=g"} style={{ width: "200%", height: "400px", borderRadius: "7px" }} />
@@ -90,11 +92,11 @@ function Maths(props) {
                     </div>
                 </div>
             </div>
-            <hr/>
+            <hr />
             <div>
                 <div id="MathsLinks">
                     <li style={{ marginTop: "10px" }}><b>Government State Textbooks PDF Links</b></li>
-                    <section style={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
+                    <section style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly" }}>
                         <section style={{ padding: "25px", backgroundColor: "white", borderRadius: "6px", paddingTop: "0px", margin: "20px" }}>
                             <p><b>State board 11<sup>th</sup>Textbook</b></p>
                             <img src={mtb11} width={"200px"} />
@@ -121,23 +123,20 @@ function Maths(props) {
                         </section>
                     </section>
                 </div>
-                <hr/>
-                <h3><li>Chapterwise Practice</li></h3>
+                <hr />
+                <h3><li>Chapterwise Practice Questions</li></h3>
                 <div>
-                    <h4>Chapterwise Practice questions of standard 11
-                    {!watch11 && <button onClick={wth11} style={{ color: "black", height: "55px", width: "55px", borderRadius: "50%", margin: "10px", color: "white", backgroundColor: "black" }}>&#x21e9;</button>}</h4>
-                    <div>
+                    <h4 style={{backgroundColor:"white",borderRadius:"5px",padding:"7px"}}>Chapterwise Practice questions of standard 11
+                        {!watch11 && <button onClick={wth11} style={{ color: "black", height: "55px", width: "55px", borderRadius: "50%", margin: "10px", color: "white", backgroundColor: "black" }}>&#x21e9;</button>}</h4>
+                    <div style={{backgroundColor:"rgba(0, 0, 0, 0.3)",padding:"7px",borderRadius:"5px"}}>
                         {watch11 && <MathsPractice11 value={clswth11} />}
                     </div>
-                    <h4>Chapterwise Practice questions of standard 12
-                    {!watch12 && <button onClick={wth12} style={{ color: "black", height: "55px", width: "55px", borderRadius: "50%", margin: "10px", color: "white", backgroundColor: "black" }}>&#x21e9;</button>}</h4>
-                    <div>
+                    <h4 style={{backgroundColor:"white",borderRadius:"5px",padding:"7px"}}> Chapterwise Practice questions of standard 12
+                        {!watch12 && <button onClick={wth12} style={{ color: "black", height: "55px", width: "55px", borderRadius: "50%", margin: "10px", color: "white", backgroundColor: "black" }}>&#x21e9;</button>}</h4>
+                    <div style={{backgroundColor:"rgba(0, 0, 0, 0.3)",padding:"7px",borderRadius:"5px"}}>
                         {watch12 && <MathsPractice12 value={clswth12} />}
                     </div>
                 </div>
-            </div>
-            <div style={{ marginLeft: "45%" }}>
-                <button id="QAP" onClick={wthqs}><Link to='/MathsQA'>Question-Answer Section</Link></button>
             </div>
         </div>
     );

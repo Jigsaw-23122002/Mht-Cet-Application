@@ -36,6 +36,7 @@
 }
 #PMain{
     padding:20px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 #PMain button{
     background-color:gray;

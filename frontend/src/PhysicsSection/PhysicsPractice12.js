@@ -74,6 +74,3 @@ function PhysicsPractice12(props){
 }
 
 export default PhysicsPractice12;
-/*
-https://www.flippingphysics.com/uploads/2/1/1/0/21103672/0366-ap1-2019-frq1-gif_orig.gif
-*/

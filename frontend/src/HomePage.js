@@ -6,7 +6,7 @@ function Home_Page(){
     return(
         <div id="h">
             <div id="b">
-                <h1 id="MainHeading"> MHT-CET (Complete Course)</h1>
+                <h1 id="MainHeading"> Academic Diary</h1>
             </div>
             <hr/>
             <div>
