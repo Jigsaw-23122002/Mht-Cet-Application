@@ -1,0 +1,24 @@
+* {
+  font-family: sans-serif;
+  color: rgb(210, 209, 209);
+}
+#syncs1 {
+  background-color: #1e1d1d;
+  padding: 10px;
+}
+h2 {
+  color: rgb(254, 210, 11);
+}
+h3 {
+  color: rgb(231, 4, 76);
+}
+ul {
+  color: white;
+}
+table {
+  border: 1px solid grey;
+}
+td {
+  margin: 0px;
+  border: 1px solid gray;
+}

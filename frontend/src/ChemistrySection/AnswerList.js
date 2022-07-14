@@ -1,4 +1,3 @@
-import '../CssSection/PQACSS.css'
 
 function AnswerList(props){
     console.log(props.answers);

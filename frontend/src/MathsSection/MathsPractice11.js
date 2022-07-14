@@ -1,5 +1,3 @@
-import "../CssSection/LinksCss.css";
-
 function MathsPractice11(props){
     return (
         <div id="MathsLinks">
