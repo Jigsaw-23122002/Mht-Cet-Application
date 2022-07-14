@@ -1,109 +1,306 @@
 function ChemistryPractice12(props) {
   return (
     <div id="ChemLinks">
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1w84Hgr3BQTYfJTWjUimaB1WoKgL7W-pa">
-          <b>1.</b>Solid State
-        </a>
+      <div class="main-container">
+        <div class="heading">
+          <h1 class="heading__title">Chapterwise Practice Questions</h1>
+          <p class="heading__credits">Credits to academicdiary@gmail.com</p>
+        </div>
+        <div class="cards">
+          <div class="card card-1">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">1.Solid State</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1w84Hgr3BQTYfJTWjUimaB1WoKgL7W-pa"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-2">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">2.Solutions</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1TpzN_R6_zbg07oGSxEggwK0j-YoKPNro"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-3">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">3.Ionic Equilibria</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1VxRoYWAncvKufdk0dQxY0DEqJ3D_1VFH"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-4">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">4.Chemical Thermodynamics</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1sPnnTsnFaAckyk6niAoQr4e1m5Q4jago"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-5">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">5.Electrochemistry</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1GcINAjWrY-Rb3mmQIjx0b8wyjW8n2bii"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-6">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">6.Chemical Kinetics</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/16qnBsjmS05HJpKvTD2e0_v0AXFnerw4k"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-1">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">7.Elements of groups 16,17 and 18</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1EEy60fUIHKtXcjNG0m_rZnrNpbA36KTr"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-2">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">
+              8.Transition and Inner Transition Elements
+            </h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1XdJn7RWhgEj_-aWaABk4Rl-gHpdVizwr"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-3">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">9.Cordination Compounds</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1d0ky1mkcvrI5ff5q79RUONL-EjmgKmRQ"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-4">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">10.Halogen Derivatives</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1rCkn_7GMK-oxhAXVLU6bgloozwRSLxO8"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-5">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">11.Alcohols,phenols and Ethers</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1H-o_XxMtexBVU8R5KCvkjnhGFqCF0xNx"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-6">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">
+              12.Aldehydes,Ketones and Carboxylic Acids
+            </h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1_ZQuVoK37hScDf8DmSyWDQcJmG1aDcI7"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-1">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">13.Amines</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1IrHSlLET7pKjgNDYvaimTrvoJNwVrh_Q"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-2">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">14.Biomolecules</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1VXHuKIe7JKQ5L0FstMWYcsNq-YgovHu8"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-3">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">15.Introduction to Polymer Chemistry</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1rG7nggsaTsJzT7RsqpSx9i3NWXEIbUKy"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="card card-4">
+            <div class="card__icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <p class="card__exit">
+              <i class="fas fa-times"></i>
+            </p>
+            <h2 class="card__title">16.Green Chemistry and Nanomaterials</h2>
+            <p class="card__apply">
+              <a
+                class="card__link"
+                href="https://drive.google.com/drive/u/0/folders/1i_G8Ks-fVWjppShckJxKKMkm2Ayi46H0"
+              >
+                Open <i class="fas fa-arrow-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1TpzN_R6_zbg07oGSxEggwK0j-YoKPNro">
-          <b>2.</b>Solutions
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1VxRoYWAncvKufdk0dQxY0DEqJ3D_1VFH">
-          <b>3.</b>Ionic Equilibria
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1sPnnTsnFaAckyk6niAoQr4e1m5Q4jago">
-          <b>4.</b>Chemical Thermodynamics
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1GcINAjWrY-Rb3mmQIjx0b8wyjW8n2bii">
-          <b>5.</b>Electrochemistry
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/16qnBsjmS05HJpKvTD2e0_v0AXFnerw4k">
-          <b>6.</b>Chemical Kinetics
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1EEy60fUIHKtXcjNG0m_rZnrNpbA36KTr">
-          <b>7.</b>Elements of groups 16,17 and 18
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1XdJn7RWhgEj_-aWaABk4Rl-gHpdVizwr">
-          <b>8.</b>Transition and Inner Transition Elements
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1d0ky1mkcvrI5ff5q79RUONL-EjmgKmRQ">
-          <b>9.</b>Cordination Compounds
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1rCkn_7GMK-oxhAXVLU6bgloozwRSLxO8">
-          <b>10.</b>Halogen Derivatives
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1H-o_XxMtexBVU8R5KCvkjnhGFqCF0xNx">
-          <b>11.</b>Alcohols,phenols and Ethers
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1_ZQuVoK37hScDf8DmSyWDQcJmG1aDcI7">
-          <b>12.</b>Aldehydes,Ketones and Carboxylic Acids
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1IrHSlLET7pKjgNDYvaimTrvoJNwVrh_Q">
-          <b>13.</b>Amines
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1VXHuKIe7JKQ5L0FstMWYcsNq-YgovHu8">
-          <b>14.</b>Biomolecules
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1rG7nggsaTsJzT7RsqpSx9i3NWXEIbUKy">
-          <b>15.</b>Introduction to Polymer Chemistry
-        </a>
-      </div>
-      <br />
-      <div>
-        <a href="https://drive.google.com/drive/u/0/folders/1i_G8Ks-fVWjppShckJxKKMkm2Ayi46H0">
-          <b>16.</b>Green Chemistry and Nanomaterials
-        </a>
-      </div>
-      <br />
-      <button
-        onClick={() => {
-          props.value();
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
         }}
       >
-        &#x21e7;
-      </button>
+        <button
+          onClick={() => {
+            props.value();
+          }}
+        >
+          Close
+        </button>
+      </div>
     </div>
   );
 }
