@@ -146,26 +146,42 @@ function Physics() {
             <b>Chapterwise Practice Questions</b>
           </p>
           <div>
+            <div className="containerss">
+              <div className="card__containerss">
+                <div className="cardss">
+                  <div className="card__contentss">
+                    <h3 className="card__headerss">Standard 11Th</h3>
+                    <p className="card__infoss">
+                      Chapterwise Practice questions of Standard 11
+                    </p>
+                    {!watch11 && (
+                      <button className="card__buttonss" onClick={wth11}>
+                        Open List
+                      </button>
+                    )}
+                  </div>
+                </div>
+                <div className="cardss">
+                  <div className="card__contentss">
+                    <h3 className="card__headerss">Standard 12Th</h3>
+                    <p className="card__infoss">
+                      Chapterwise Practice questions of Standard 12
+                    </p>
+                    {!watch12 && (
+                      <button className="card__buttonss" onClick={wth12}>
+                        Open List
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
             <div>
-              <h4>
-                Chapterwise Practice questions of Standard 11
-                {!watch11 && (
-                  <button id="openList" onClick={wth11}>
-                    Open List
-                  </button>
-                )}
-              </h4>
+              <h4></h4>
               <div>{watch11 && <PhysicsPractice11 value={clswth11} />}</div>
             </div>
             <div>
-              <h4>
-                Chapterwise Practice questions of Standard 12
-                {!watch12 && (
-                  <button id="openList" onClick={wth12}>
-                    Open List
-                  </button>
-                )}
-              </h4>
+              <h4></h4>
               <div>{watch12 && <PhysicsPractice12 value={clswth12} />}</div>
             </div>
           </div>

@@ -2,12 +2,11 @@ import { useState } from "react";
 import MathsPractice11 from "./MathsPractice11";
 import MathsPractice12 from "./MathsPractice12";
 import { Link } from "react-router-dom";
-import t1 from '../ChemistrySection/one.png';
-import t2 from '../ChemistrySection/two.png'
-import t3 from '../PhysicsSection/one.png';
-import t4 from '../PhysicsSection/two.png'
-import mgif from './mgif.gif';
-
+import t1 from "../ChemistrySection/one.png";
+import t2 from "../ChemistrySection/two.png";
+import t3 from "../PhysicsSection/one.png";
+import t4 from "../PhysicsSection/two.png";
+import mgif from "./mgif.gif";
 
 function Maths(props) {
   let [watch11, setWatch11] = useState(false);
@@ -127,7 +126,7 @@ function Maths(props) {
                   State board 11<sup>th</sup>Textbook
                 </b>
               </p>
-              <img id="tbs" src={t1}/>
+              <img id="tbs" src={t1} />
               <br />
               <button>
                 <a href="https://drive.google.com/drive/u/0/folders/10GFS93eUh_CCoWnk2ng3oN5WJckP7kxF">
@@ -141,7 +140,7 @@ function Maths(props) {
                   State board 12<sup>th</sup>Textbook
                 </b>
               </p>
-              <img id="tbs" src={t2}/>
+              <img id="tbs" src={t2} />
               <br />
               <button>
                 <a href="https://drive.google.com/drive/u/0/folders/1fNdnOkY33-wvwoWqO9oH4Bc747WkfIqm">
@@ -155,7 +154,7 @@ function Maths(props) {
                   State board 12<sup>th</sup>Textbook
                 </b>
               </p>
-              <img id="tbs" src={t3}/>
+              <img id="tbs" src={t3} />
               <br />
               <button>
                 <a href="https://drive.google.com/drive/u/0/folders/1kCGptgRcqfoXdz9KuJ7oxlfu9mSO3Reh">
@@ -169,7 +168,7 @@ function Maths(props) {
                   State board 12<sup>th</sup>Textbook
                 </b>
               </p>
-              <img id="tbs" src={t4}/>
+              <img id="tbs" src={t4} />
               <br />
               <button>
                 <a href="https://drive.google.com/drive/u/0/folders/11TR3cWGGH4RhVbLWk-v6hWXu6gAE1phZ">
@@ -184,24 +183,37 @@ function Maths(props) {
           <b>Chapterwise Practice Questions</b>
         </p>
         <div>
-          <h4>
-            Chapterwise Practice questions of standard 11
-            {!watch11 && (
-              <button id="openList" onClick={wth11}>
-                Open List
-              </button>
-            )}
-          </h4>
+          <div className="containerss">
+            <div className="card__containerss">
+              <div className="cardss">
+                <div className="card__contentss">
+                  <h3 className="card__headerss">Standard 11Th</h3>
+                  <p className="card__infoss">
+                    Chapterwise Practice questions of Standard 11
+                  </p>
+                  {!watch11 && (
+                    <button className="card__buttonss" onClick={wth11}>
+                      Open List
+                    </button>
+                  )}
+                </div>
+              </div>
+              <div className="cardss">
+                <div className="card__contentss">
+                  <h3 className="card__headerss">Standard 12Th</h3>
+                  <p className="card__infoss">
+                    Chapterwise Practice questions of Standard 12
+                  </p>
+                  {!watch12 && (
+                    <button className="card__buttonss" onClick={wth12}>
+                      Open List
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
           <div>{watch11 && <MathsPractice11 value={clswth11} />}</div>
-          <h4>
-            {" "}
-            Chapterwise Practice questions of standard 12
-            {!watch12 && (
-              <button id="openList" onClick={wth12}>
-                Open List
-              </button>
-            )}
-          </h4>
           <div>{watch12 && <MathsPractice12 value={clswth12} />}</div>
         </div>
       </div>

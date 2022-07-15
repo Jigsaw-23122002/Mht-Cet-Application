@@ -110,63 +110,85 @@ function Chemistry() {
         </div>
         <hr />
         <div>
-        <div id="PhysicsLinks">
-          <p id="redCol">
-            <b>Government State Textbooks PDF Links</b>
+          <div id="PhysicsLinks">
+            <p id="redCol">
+              <b>Government State Textbooks PDF Links</b>
             </p>
-          <section id="Tbs">
-            <section id="intbs">
-              <p id="intbsinp">
-                <b>
-                  State board 11<sup>th</sup>Textbook
-                </b>
-              </p>
-              <img id="tb" src={one}/>
-              <br />
-              <button>
-                <a href="https://drive.google.com/drive/u/0/folders/1ezEagHTXt_m6KCrq_51_UkBYQ29aUMJV">
-                  Open
-                </a>
-              </button>
+            <section id="Tbs">
+              <section id="intbs">
+                <p id="intbsinp">
+                  <b>
+                    State board 11<sup>th</sup>Textbook
+                  </b>
+                </p>
+                <img id="tb" src={one} />
+                <br />
+                <button>
+                  <a href="https://drive.google.com/drive/u/0/folders/1ezEagHTXt_m6KCrq_51_UkBYQ29aUMJV">
+                    Open
+                  </a>
+                </button>
+              </section>
+              <section id="intbs">
+                <p id="intbsinp">
+                  <b>
+                    State board 12<sup>th</sup>Textbook
+                  </b>
+                </p>
+                <img src={two} id="tb" />
+                <br />
+                <button>
+                  <a
+                    href="https://drive.google.com/drive/u/0/folders/19oJrAPVcKiaWIo4iFQksItahteO0ziLM"
+                    style={{ decoration: "none" }}
+                  >
+                    Open
+                  </a>
+                </button>
+              </section>
             </section>
-            <section id="intbs">
-              <p id="intbsinp">
-                <b>
-                  State board 12<sup>th</sup>Textbook
-                </b>
-              </p>
-              <img src={two} id="tb" />
-              <br />
-              <button>
-                <a
-                  href="https://drive.google.com/drive/u/0/folders/19oJrAPVcKiaWIo4iFQksItahteO0ziLM"
-                  style={{ decoration: "none" }}
-                >
-                  Open
-                </a>
-              </button>
-            </section>
-          </section>
-        </div>
+          </div>
         </div>
         <hr />
         <div>
-        <p id="redCol">
+          <p id="redCol">
             <b>Chapterwise Practice Questions</b>
           </p>
           <div>
+            <div className="containerss">
+              <div className="card__containerss">
+                <div className="cardss">
+                  <div className="card__contentss">
+                    <h3 className="card__headerss">Standard 11Th</h3>
+                    <p className="card__infoss">
+                      Chapterwise Practice questions of Standard 11
+                    </p>
+                    {!watch11 && (
+                      <button className="card__buttonss" onClick={wth11}>
+                        Open List
+                      </button>
+                    )}
+                  </div>
+                </div>
+                <div className="cardss">
+                  <div className="card__contentss">
+                    <h3 className="card__headerss">Standard 12Th</h3>
+                    <p className="card__infoss">
+                      Chapterwise Practice questions of Standard 12
+                    </p>
+                    {!watch12 && (
+                      <button className="card__buttonss" onClick={wth12}>
+                        Open List
+                      </button>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
             <div>
-              <h4>
-                Chapterwise Practice questions of standard 11
-                {!watch11 && <button id="openList" onClick={wth11}>Open List</button>}
-              </h4>
               <div>{watch11 && <ChemistryPractice11 value={clswth11} />}</div>
             </div>
             <div>
-              <h4>
-                Chapterwise Practice questions of standard 12
-                {!watch12 && <button id="openList"onClick={wth12}>Open List</button>}
-              </h4>
               <div>{watch12 && <ChemistryPractice12 value={clswth12} />}</div>
             </div>
           </div>
