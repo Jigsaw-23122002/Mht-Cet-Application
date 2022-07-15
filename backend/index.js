@@ -131,7 +131,7 @@ io.on('connection',(socket)=>{
     })
 })
 
-const port=process.env.PORT || 3001;
-server.listen(port,()=>{
+;
+server.listen(3001,()=>{
     console.log("Server currently running");
 })
