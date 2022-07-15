@@ -98,7 +98,6 @@ function PQASection(props) {
       </section>
       <section>
         <button className="BackToMain" onClick={props.close}>
-          {" "}
           <Link to="/Physics">Back to Main</Link>
         </button>
       </section>
