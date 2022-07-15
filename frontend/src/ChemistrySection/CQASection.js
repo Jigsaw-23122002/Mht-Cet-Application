@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import UserContext from "../UserContext";
 import AnswerComponent from "./AnswerComponent";
 
-const socket = io.connect("http://localhost:4500");
+const socket = io.connect("http://localhost:3001");
 
 function CQASection(props) {
   const { chemistryData, setChemistryData } = useContext(UserContext);

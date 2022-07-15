@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import UserContext from "../UserContext";
 import AnswerComponent from "./AnswerComponent";
 
-const socket = io.connect("http://localhost:4500");
+const socket = io.connect("http://localhost:3001");
 
 function PQASection(props) {
   const { physicsData, setPhysicsData } = useContext(UserContext);
@@ -29,12 +29,10 @@ function PQASection(props) {
 
   useEffect(() => {
     socket.emit("getPhysicsQuestions");
-  }, []);
-  useEffect(() => {
     socket.on("takePhysicsQuestions", (data) => {
       setPhysicsData(data);
     });
-  });
+  }, []);
 
   return (
     <div id="natak">

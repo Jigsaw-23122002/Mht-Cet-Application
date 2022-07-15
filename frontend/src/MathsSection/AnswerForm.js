@@ -1,7 +1,7 @@
 import io from "socket.io-client";
 import { useEffect, useState } from "react";
 
-const socket = io.connect("http://localhost:4500");
+const socket = io.connect("http://localhost:3001");
 
 function AnswerForm(props) {
   const [answerer, setAnswerer] = useState("");

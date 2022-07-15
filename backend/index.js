@@ -131,6 +131,6 @@ io.on('connection',(socket)=>{
     })
 })
 
-server.listen(4500,()=>{
+server.listen(3001,()=>{
     console.log("Server currently running");
 })
