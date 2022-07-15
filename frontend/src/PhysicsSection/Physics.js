@@ -176,14 +176,8 @@ function Physics() {
                 </div>
               </div>
             </div>
-            <div>
-              <h4></h4>
               <div>{watch11 && <PhysicsPractice11 value={clswth11} />}</div>
-            </div>
-            <div>
-              <h4></h4>
               <div>{watch12 && <PhysicsPractice12 value={clswth12} />}</div>
-            </div>
           </div>
         </div>
       </div>
