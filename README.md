@@ -31,7 +31,7 @@
 
 1. Clone the repository
 ```
-git clone https://github.com/Neel-Shah-29/SOCIABLAST.git
+git clone https://github.com/Jigsaw-23122002/Mht-Cet-Application.git
 
 ```
 To start the frontend user interface
